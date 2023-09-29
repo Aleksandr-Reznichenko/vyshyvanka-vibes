@@ -1,0 +1,18 @@
+/* 
+   ====================
+    Variables (Змінні) 
+   ====================
+*/
+
+:root {
+  --prymary-font: 'Manrope', sans-serif;
+
+  --bg-color: #1c2225;
+  --accent-color: #ecd979;
+
+  --prymary-color: #fcf9f9;
+  --secondary-color: rgba(252, 249, 249, 0.4);
+
+  --border-color: rgba(252, 249, 249, 0.1);
+  --input-color: rgba(252, 249, 249, 0.5);
+}

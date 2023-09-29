@@ -1,0 +1,21 @@
+/* UTILS (Допоміжні стилі) */
+@import url('./utils/variables.css');
+@import url('./utils/visually-hidden.css');
+
+/* BASE (Базові стилі) */
+@import url('./base/common.css');
+@import url('./base/container.css');
+@import url('./base/section.css');
+
+/* LAYOUT (Стилі окремих секцій) */
+@import url('./layout/header.css');
+
+@import url('./layout/hero.css');
+@import url('./layout/about-us.css');
+@import url('./layout/collection.css');
+@import url('./layout/order.css');
+@import url('./layout/testimonials.css');
+
+@import url('./layout/footer.css');
+
+@import url('./layout/mobile-menu.css');

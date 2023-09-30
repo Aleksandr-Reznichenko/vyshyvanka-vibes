@@ -1,0 +1,109 @@
+.hero-title {
+    color: var(--prymary-color);
+    font-family: 'Manrope', sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.23;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+}
+
+.hero-title .hero-accent {
+    color: var(--accent-color);
+}
+
+.hero-button {
+    background-color: var(--bg-color);
+    color: var(--prymary-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.37;
+    letter-spacing: 0.04em;
+    min-width: 155px;
+    height: 49px;
+    /* gap: 10px; */
+    border: 1px solid var(--prymary-color);
+    border-radius: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin-right: 110px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.hero-arrow-icon {
+    fill: var(--accent-color);
+}
+
+.hero-img {
+    border-radius: 4px;
+}
+
+.hero-img-group {
+    display: none;
+}
+
+.header-star-container {
+    display: none;
+    position: absolute;
+    top: 152px;
+    right: 32px;
+    width: 115px;
+    height: 111px;
+}
+
+.header-icon-star {
+    fill: var(--accent-color);
+    margin-bottom: 16px;
+    display: block;
+    margin-left: auto;
+        margin-right: auto;
+}
+
+.header-icon-text {
+    font-family: var(--prymary-font);
+    color: rgba(252, 249, 249, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.37;
+    letter-spacing: -0.04em;
+    text-align: center;
+}
+
+/* ------Tablet-------------- */
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 54px;
+        line-height: 1.19;
+        width: 549px;
+        height: 192px;
+        margin-bottom: 40px;
+    }
+
+    .hero-button {
+        font-size: 14px;
+        padding-left: 39px;
+        padding-right: 39px;
+        margin-right: 395px;
+        margin-left: 141px;
+    }
+
+    .header-star-container {
+        display: block;
+    }
+
+    .hero-img-group {
+        display: block;
+    }
+
+
+}

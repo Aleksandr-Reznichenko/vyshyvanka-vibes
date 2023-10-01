@@ -1,15 +1,38 @@
 .collection-box {
-  background-color: var(--bg-color);
-  background-image: url(../img/collection/logo.png);
+
+  background-image: url(../img/collection/elements.png);
   background-repeat: no-repeat;
   background-position: left;
-  background-position-y: 450px;
+  background-position-y: 335px;
 }
 
-
-.container img {
-  display: inline-block;
+@media screen and (min-width: 768px) {
+  .collection-box {
+    background-image: url(../img/collection/elements-tablet.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 185px;
+  }
 }
+
+@media screen and (min-width: 1280px) {
+  .collection-box {
+    background-image: url(../img/collection/elements-1280.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 200px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .collection-box {
+    background-image: url(../img/collection/elements-1440.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 285px;
+  }
+}
+
 
 .collection-title {
   margin-bottom: 40px;

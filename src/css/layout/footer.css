@@ -14,7 +14,6 @@
 }
 
 .footer-title {
-    width: 335px;
     color: var(--prymary-color);
     font-family:var(--prymary-font);
     font-size: 44px;
@@ -45,6 +44,7 @@
 .footer-item {
 width: calc((100% - 40px) / 2);
 }
+
 .footer {
     margin: 0 auto;
     background-color:var(--bg-color);

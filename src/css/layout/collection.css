@@ -1,5 +1,5 @@
 .collection-box {
-  background-color: black;
+  background-color: var(--bg-color);
   background-image: url(../img/collection/logo.png);
   background-repeat: no-repeat;
   background-position: left;

@@ -25,9 +25,9 @@
 
 @media screen and (min-width: 768px) {
   .order {
-    padding-bottom: 79px;
+    padding-bottom: 129px;
     background-image: url('../../img/order/tablet/order-ornament-bg.png');
-    background-position: bottom left;
+    background-position: bottom 50px left;
     background-repeat: no-repeat;
     background-size: 42% auto;
   }
@@ -61,8 +61,6 @@
   .bg-img-wrapper {
     margin-bottom: 150px;
     background-image: url('../../img/order/desctop-1280/order-bg-img-desctop.jpg');
-    background-position: top;
-    background-size: cover;
   }
 
   .order .container {
@@ -97,8 +95,10 @@
   screen and (min-resolution: 2dppx) and (min-width: 1440px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .order {
-    background-image: url('../../img/order/desctop-1440/order-bg-img-desctop1440@2x.jpg'),
-      url('../../img/order/desctop-1440/order-ornament-desctop1440@2x.png');
+    background-image: url('../../img/order/desctop-1440/order-ornament-desctop1440@2x.png');
+  }
+  .bg-img-wrapper {
+    background-image: url('../../img/order/desctop-1440/order-bg-img-desctop1440@2x.jpg');
   }
 }
 
@@ -106,7 +106,7 @@
 .order-text {
   max-width: 310px;
   margin-bottom: 40px;
-  color: #fcf9f9;
+  color: var(--prymary-color);
   font-size: 32px;
   font-weight: 500;
   line-height: 1.375;
@@ -122,7 +122,7 @@
 }
 
 .mod-color-accent {
-  color: #ecd979;
+  color: var(--accent-color);
 }
 /* ---- */
 
@@ -164,36 +164,36 @@
   width: 100%;
   padding: 14px 16px;
   border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
+  border: 1px solid var(--border-color);
   background-color: transparent;
-  color: #fcf9f9;
+  color: var(--prymary-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.02em;
   outline: transparent;
-  transition: border 0.5s ease-in-out;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form-comment {
   width: 100%;
   height: 196px;
   padding: 14px 16px;
   border-radius: 8px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
+  border: 1px solid var(--border-color);
   background-color: transparent;
-  color: #fcf9f9;
+  color: var(--prymary-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.02em;
   outline: transparent;
-  transition: border 0.5s ease-in-out;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form-input::placeholder,
 .order-form-comment::placeholder {
-  color: rgba(252, 249, 249, 0.5);
+  color: var(--input-color);
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
@@ -204,7 +204,7 @@
   border: 1px solid rgba(252, 249, 249, 0.6);
 }
 .form-btn {
-  max-width: 145px;
+  width: 145px;
   display: flex;
   padding: 14px 36px;
   margin: 0 auto;
@@ -212,9 +212,9 @@
   align-items: center;
   gap: 10px;
   border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
+  border: 1px solid var(--border-color);
   background: transparent;
-  color: #fcf9f9;
+  color: var(--prymary-color);
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
@@ -222,25 +222,25 @@
   line-height: normal;
   letter-spacing: -0.035em;
   text-transform: uppercase;
-  transition: border 0.5s ease-in-out;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .form-btn {
     margin: 0;
-    max-width: 168px;
+    width: 168px;
     font-size: 16px;
     letter-spacing: -0.04em;
   }
   .form-btn:hover {
-    border: 1px solid #ecd979;
+    border: 1px solid var(--accent-color);
   }
 }
 
 .form-btn:focus {
-  border: #ecd979;
+  border: var(--accent-color);
 }
 .form-btn-arrow {
-  fill: #ecd979;
+  fill: var(--accent-color);
 }
 .order-img-wrapper {
   display: none;

@@ -148,6 +148,11 @@
         right: 100px;
     }
 
+    .hero-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     /* .hero-container-position {
         
     } */

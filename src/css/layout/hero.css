@@ -105,5 +105,24 @@
         display: block;
     }
 
+    .hero-container-position {
+        display: flex;
+        align-items: flex-end;
+        gap: 143px;
+    }
 
+    .hero-map-group {
+        position: relative;
+        bottom: -105px;
+        right: -9px;
+    }
 }
+
+/* ------Desktop 1258--------------- */
+
+@media screen and (min-width: 1280px) {
+    
+}
+
+
+/* ------Desktop 1440----------------- */

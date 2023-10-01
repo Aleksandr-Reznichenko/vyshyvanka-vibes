@@ -24,12 +24,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .order {
-    padding-bottom: 129px;
+  .order .container {
+    padding-bottom: 79px;
     background-image: url('../../img/order/tablet/order-ornament-bg.png');
-    background-position: bottom 50px left;
+    background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: 42% auto;
+    background-size: 43%;
   }
   .bg-img-wrapper {
     height: 776px;
@@ -43,7 +43,7 @@
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-  .order {
+  .order .container {
     background-image: url('../../img/order/tablet/order-ornament-bg@2x.png');
   }
   .bg-img-wrapper {
@@ -52,29 +52,29 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .order {
-    padding-bottom: 75px;
-    background-image: url('../../img/order/desctop-1280/order-ornament-bg-desctop.png');
-    background-position: bottom 76px left;
-    background-size: 22.5% 33.5%;
-  }
-  .bg-img-wrapper {
-    margin-bottom: 150px;
-    background-image: url('../../img/order/desctop-1280/order-bg-img-desctop.jpg');
-  }
-
   .order .container {
     display: flex;
     flex-direction: row-reverse;
     padding-left: 64px;
     gap: 50px;
     justify-content: space-between;
+    background-image: url('../../img/order/desctop-1280/order-ornament-bg-desctop.png');
+    background-position: bottom 75px left;
+    background-size: 22.5% 72%;
   }
+  .bg-img-wrapper {
+    margin-bottom: 150px;
+    background-image: url('../../img/order/desctop-1280/order-bg-img-desctop.jpg');
+  }
+
+  /* .order .container {
+
+  } */
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
   screen and (min-resolution: 2dppx) and (min-width: 1280px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
-  .order {
+  .order .container {
     background-image: url('../../img/order/desctop-1280/order-ornament-bg-desctop@2x.png');
   }
   .bg-img-wrapper {
@@ -82,10 +82,13 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .order {
+  /* .order {
+
+  } */
+  .order .container {
     background-image: url('../../img/order/desctop-1440/order-ornament-desctop1440.png');
-    background-position: bottom 76px left;
-    background-size: 22.5% 33.5%;
+    background-position: bottom 75px left -2px;
+    background-size: 22% 72%;
   }
   .bg-img-wrapper {
     background-image: url('../../img/order/desctop-1440/order-bg-img-desctop1440.jpg');
@@ -94,7 +97,7 @@
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
   screen and (min-resolution: 2dppx) and (min-width: 1440px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-  .order {
+  .order .container {
     background-image: url('../../img/order/desctop-1440/order-ornament-desctop1440@2x.png');
   }
   .bg-img-wrapper {

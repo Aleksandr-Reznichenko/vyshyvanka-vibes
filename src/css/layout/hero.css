@@ -115,7 +115,7 @@
 
     .hero-map-group {
         position: relative;
-        bottom: -105px;
+        bottom: -110px;
         right: -9px;
     }
 }
@@ -128,8 +128,32 @@
         height: 192px;
     }
 
+    .header-star-container {
+        top: 186px;
+        right: 100px;
+    }
+
+    /* .hero-container-position {
+        
+    } */
+
+    .hero-map-group {
+        position: relative;
+        bottom: -75px;
+        right: -4px;
+        }
+
+
+
 
 }
 
 
 /* ------Desktop 1440----------------- */
+
+@media screen and (min-width: 1440px) {
+    .header-star-container {
+            top: 236px;
+            right: 100px;
+        }
+}

@@ -1,0 +1,142 @@
+.container-about-us {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 320px;
+  padding-bottom: 50px;
+}
+
+.about {
+  background-image: url(/img/about/desktop-1280/about-us-background-desktop.png);
+  background-repeat: no-repeat;
+  background-position: top 540px right -150px;
+  background-color: var(--bg-color);
+  max-width: fit-content;
+}
+.about-us-list {
+  margin-bottom: 25px;
+}
+.about-us-title {
+  color: var(--prymary-color);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.96px;
+  max-width: 375px;
+}
+
+.about-us-text {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+.about-us-item {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.about-us-icon {
+   border-radius: 4px;
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 375px) {
+  .container-about-us {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-us {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-us-item {
+    width: 335px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-about-us {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 768px;
+    padding-bottom: 50px;
+  }
+  .about-us-item {
+    width: 704px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .about {
+    background-image: url(/img/about/desktop-1280/about-us-background-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top 515px right -20px;
+    background-color: var(--bg-color);
+    max-width: fit-content;
+    margin: 0;
+  }
+  .about-us-title {
+    color: var(--white, #fcf9f9);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.45455;
+    letter-spacing: -1.32px;
+  }
+  .about-us-text {
+    color: rgba(252, 249, 249, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-about-us {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: inherit;
+    align-items: flex-start;
+    width: 1080px;
+    /* padding: 0 100px 50px 100px; */
+  }
+  .text-container{
+    display: block;
+    margin-right: 50px;
+    padding-top: 50px;
+  }
+ 
+  .about-us-title {
+    color: var(--white, #fcf9f9);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.45455;
+    letter-spacing: -1.32px;
+    max-width: 436;
+  }
+  
+  .about-us-list{
+    max-width: 436px;
+  }
+  .about-us-text {
+    color: rgba(252, 249, 249, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    max-width: 436px;
+  }
+  .about {
+    background-position: top 200px right -250px;
+    max-width: fit-content;
+    margin: 0;
+}
+}

@@ -115,22 +115,27 @@
 
     .hero-img-group {
         display: block;
+        position: absolute;
+        top: 975px;
+        right: 32px;
+        width: 139px;
+        height: 197px;
     }
 
-    .hero-container-position {
+    /* .hero-container-position {
         display: flex;
         align-items: flex-end;
         gap: 143px;
-    }
+    } */
 
-    .hero-map-group {
+    /* .hero-map-group {
         position: relative;
         bottom: -110px;
         right: -9px;
-    }
+    } */
 }
 
-/* ------Desktop 1258--------------- */
+/* ------Desktop 1280--------------- */
 
 @media screen and (min-width: 1280px) {
     .hero {
@@ -141,6 +146,7 @@
     .hero-title {
         width: 518px;
         height: 192px;
+        margin-top: 94px;
     }
 
     .header-star-container {
@@ -151,17 +157,23 @@
     .hero-container {
         display: flex;
         flex-direction: row-reverse;
+        gap: 40px;
     }
 
     /* .hero-container-position {
         
     } */
 
-    .hero-map-group {
+    /* .hero-map-group {
         position: relative;
         bottom: -75px;
         right: -4px;
-        }
+        } */
+
+    .hero-img-group {
+        top: 619px;
+        right: 100px;
+    }
 
 
 
@@ -175,4 +187,13 @@
             top: 236px;
             right: 100px;
         }
+
+    .hero-title {
+        margin-top: 66px;
+    }
+
+    .hero-img-group {
+        top: 617px;
+        right: 100px;
+    }
 }

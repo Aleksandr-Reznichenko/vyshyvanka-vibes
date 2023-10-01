@@ -1,18 +1,19 @@
 .container-about-us {
+  margin: 0 auto;
   box-sizing: border-box;
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   min-width: 320px;
-  padding-bottom: 50px;
 }
 
 .about {
-  background-image: url(/img/about/desktop-1280/about-us-background-desktop.png);
+  background-image: url(/img/about/mobile/about-us-background-mobile.png);
   background-repeat: no-repeat;
-  background-position: top 540px right -150px;
+  background-position: bottom right -1px;
   background-color: var(--bg-color);
   max-width: fit-content;
+  margin: 0 auto;
 }
 .about-us-list {
   margin-bottom: 25px;
@@ -40,18 +41,15 @@
   padding-top: 20px;
 }
 .about-us-icon {
-   border-radius: 4px;
-  padding-bottom: 100px;
+  border-radius: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media screen and (min-width: 375px) {
   .container-about-us {
     display: inline-flex;
     flex-direction: column;
-    align-items: flex-start;
-  }
-  .about-us {
-    margin: 0;
-    padding: 0;
+    align-items: center;
   }
 
   .about-us-item {
@@ -63,25 +61,30 @@
 
 @media screen and (min-width: 768px) {
   .container-about-us {
+    margin: 0 auto;
     box-sizing: border-box;
     display: inline-flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 768px;
-    padding-bottom: 50px;
   }
   .about-us-item {
     width: 704px;
     margin: 0 auto;
     padding-top: 20px;
   }
+  .about-us-icon {
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
   .about {
     background-image: url(/img/about/desktop-1280/about-us-background-desktop.png);
     background-repeat: no-repeat;
-    background-position: top 515px right -20px;
+    background-position: bottom right -15px;
     background-color: var(--bg-color);
     max-width: fit-content;
-    margin: 0;
+    margin: 0 auto;
   }
   .about-us-title {
     color: var(--white, #fcf9f9);
@@ -101,30 +104,35 @@
 
 @media screen and (min-width: 1280px) {
   .container-about-us {
-    box-sizing: border-box;
     display: inline-flex;
     flex-direction: inherit;
-    align-items: flex-start;
+    align-items: center;
     width: 1080px;
-    /* padding: 0 100px 50px 100px; */
+    height: 545px;
+    margin: 0 auto;
+    padding: 0;
   }
-  .text-container{
+  .text-container {
     display: block;
     margin-right: 50px;
-    padding-top: 50px;
   }
- 
+
   .about-us-title {
     color: var(--white, #fcf9f9);
     font-size: 44px;
     font-weight: 500;
-    line-height: 1.45455;
+    line-height: 64px;
     letter-spacing: -1.32px;
-    max-width: 436;
+    margin: 0;
   }
-  
-  .about-us-list{
+
+  .about-us-list {
     max-width: 436px;
+  }
+  .about-us-item {
+    width: 436px;
+    margin: 0 auto;
+    padding-top: 20px;
   }
   .about-us-text {
     color: rgba(252, 249, 249, 0.4);
@@ -132,11 +140,65 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.64px;
-    max-width: 436px;
+    width: 436px;
+    margin: 0;
   }
   .about {
-    background-position: top 200px right -250px;
-    max-width: fit-content;
-    margin: 0;
-}
+    background-image: url(/img/about/desktop-1280/about-us-background-desktop.png);
+    background-position: bottom right 1px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 100px 0 100px;
+    height: 625px;
+  }
+  .about-us-icon {
+    padding: 0;
+    border-radius: 4px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    .container-about-us {
+      display: inline-flex;
+      flex-direction: inherit;
+      align-items: center;
+      width: 1240px;
+      height: 545px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .about-us-list {
+      width: 481px;
+    }
+    .about-us-item {
+      width: 481px;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+    .about-us-text {
+      color: rgba(252, 249, 249, 0.4);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.64px;
+      width: 481px;
+      margin: 0;
+    }
+    .about {
+      background-image: url(/img/about/desktop-1440/about-us-background-desktophq.png);
+      background-position: bottom right 1px;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 100px 0 100px;
+      height: 625px;
+    }
+    .text-container {
+      display: block;
+      margin-right: 50px;
+      width: 481px;
+    }
+    .about-us-icon {
+      padding: 0;
+      border-radius: 4px;
+    }
+  }
 }

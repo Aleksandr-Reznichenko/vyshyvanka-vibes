@@ -1,9 +1,19 @@
 .collection-box {
-
   background-image: url(../img/collection/elements.png);
   background-repeat: no-repeat;
   background-position: left;
-  background-position-y: 335px;
+  background-position-y: 325px;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .collection-box {
+    background-image: url(../img/collection/elements.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 320px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -15,7 +25,30 @@
   }
 }
 
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .collection-box {
+    background-image: url(../img/collection/elements-tablet.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 220px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
+  .collection-box {
+    background-image: url(../img/collection/elements-1280.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 200px;
+  }
+}
+
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
   .collection-box {
     background-image: url(../img/collection/elements-1280.png);
     background-repeat: no-repeat;
@@ -33,6 +66,16 @@
   }
 }
 
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+screen and (min-resolution: 2dppx) and (min-width: 1440px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1440px)  {
+  .collection-box {
+    background-image: url(../img/collection/elements-1440.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 289px;
+  }
+}
 
 .collection-title {
   margin-bottom: 40px;

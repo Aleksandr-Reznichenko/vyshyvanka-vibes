@@ -1,5 +1,5 @@
 .collection-box {
-  background-image: url(../img/collection/elements.png);
+  background-image: url(../../img/collection/elements.png);
   background-repeat: no-repeat;
   background-position: left;
   background-position-y: 325px;
@@ -8,8 +8,8 @@
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px),
 screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-  .collection-box {
-    background-image: url(../img/collection/elements.png);
+ .collection-box {
+    background-image: url(../../img/collection/elements.png);
     background-repeat: no-repeat;
     background-position: left;
     background-position-y: 320px;
@@ -18,7 +18,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 @media screen and (min-width: 768px) {
   .collection-box {
-    background-image: url(../img/collection/elements-tablet.png);
+    background-image: url(../../img/collection/elements-tablet.png);
     background-repeat: no-repeat;
     background-position: left;
     background-position-y: 185px;
@@ -29,7 +29,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 screen and (min-resolution: 2dppx) and (min-width: 768px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .collection-box {
-    background-image: url(../img/collection/elements-tablet.png);
+    background-image: url(../../img/collection/elements-tablet.png);
     background-repeat: no-repeat;
     background-position: left;
     background-position-y: 220px;
@@ -38,7 +38,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 @media screen and (min-width: 1280px) {
   .collection-box {
-    background-image: url(../img/collection/elements-1280.png);
+    background-image: url(../../img/collection/elements-1280.png);
     background-repeat: no-repeat;
     background-position: left;
     background-position-y: 200px;
@@ -50,7 +50,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 screen and (min-resolution: 2dppx) and (min-width: 1280px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
   .collection-box {
-    background-image: url(../img/collection/elements-1280.png);
+    background-image: url(../../img/collection/elements-1280.png);
     background-repeat: no-repeat;
     background-position: left;
     background-position-y: 200px;
@@ -59,7 +59,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
 
 @media screen and (min-width: 1440px) {
   .collection-box {
-    background-image: url(../img/collection/elements-1440.png);
+    background-image: url(../../img/collection/elements-1440.png);
     background-repeat: no-repeat;
     background-position: left;
     background-position-y: 285px;
@@ -70,7 +70,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
 screen and (min-resolution: 2dppx) and (min-width: 1440px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1440px)  {
   .collection-box {
-    background-image: url(../img/collection/elements-1440.png);
+    background-image: url(../../img/collection/elements-1440.png);
     background-repeat: no-repeat;
     background-position: left;
     background-position-y: 289px;
@@ -112,23 +112,21 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1440px)  {
 }
 
 .collection-projekt-text {
-  padding: 18px 20px;
+  padding-top: 18px;
   display: flex;
   width: 335px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-
 }
 
-.collection-text {
-  display: flex;
-  overflow: hidden;
+.collection-text {  
+  white-space: nowrap;
   text-overflow: ellipsis;
   color: #FCF9F9;
   width: 335px;
   font-family: Manrope;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.0;
@@ -136,7 +134,19 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1440px)  {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  text-transform: uppercase;
+  text-transform: uppercase;  
+}
+
+@media screen and (min-width: 768px) {
+  .collection-text {
+   font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .collection-text {
+    overflow: hidden;
+  }
 }
 
 .collection-price {

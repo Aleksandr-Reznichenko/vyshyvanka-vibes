@@ -1,5 +1,5 @@
 .header {
-  padding: 27px 0;
+  padding-top: 27px;
 }
 
 .navbar {
@@ -20,7 +20,7 @@
   }
 
   .social-list-icon {
-    transition: fill 250ms ease-out;
+    transition: fill 300ms ease-out;
   }
 
   .social-list-link:hover .social-list-icon,
@@ -35,11 +35,10 @@
 
   .social-list {
     display: flex;
-    width: 156px;
     align-items: flex-start;
     justify-content: center;
     gap: 12px;
-    padding-right: 12px;
+    margin-right: 12px;
     margin-left: auto;
   }
 
@@ -63,7 +62,7 @@
     border-radius: 15px;
     width: 100%;
     height: 100%;
-    transition: border-color 250ms ease-out;
+    transition: border-color 300ms ease-out;
   }
 
   .social-icon {
@@ -85,7 +84,7 @@
   }
 
   .open-mobile-menu-icon {
-    transition: stroke 250ms ease-out;
+    transition: stroke 300ms ease-out;
   }
 }
 
@@ -131,7 +130,7 @@
     color: var(--accent-color);
   }
 
-  .contact-list {
+  .contact-list-link {
     display: flex;
     padding: 14px 28px;
     justify-content: center;
@@ -139,12 +138,12 @@
     gap: 10px;
     border-radius: 15px;
     border: 1px solid rgba(252, 249, 249, 0.1);
-    transition: border-color 250ms ease-out;
+    transition: border-color 300ms ease-out;
   }
 
-  .contact-list:hover,
-  .contact-list:focus,
-  .contact-list:active {
+  .contact-list-link:hover,
+  .contact-list-link:focus,
+  .contact-list-link:active {
     border-color: var(--accent-color);
   }
 

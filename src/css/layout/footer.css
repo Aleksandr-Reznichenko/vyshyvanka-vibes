@@ -1,5 +1,28 @@
 /* PAGE FOOTER */
 
+.footer {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 292px;
+  background-image: url(../../img/footer.img/footer-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 375px),
+  screen and (min-resolution: 2dppx) and (min-width: 375px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
+  .footer {
+    background-image: url(../../img/footer.img/footer-mobile@2.png);
+    background-size: 375px;
+  }
+}
+
+.footer-container {
+  padding-top: 40px;
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
+}
+
 .footer-nav {
   display: inline-block;
 }
@@ -46,24 +69,8 @@
   width: calc((100% - 40px) / 2);
 }
 
-.footer {
-  margin: 0 auto;
-  background-color: var(--bg-color);
-  padding-top: 40px;
-  padding-bottom: 292px;
-  border-top: 1px solid rgba(252, 249, 249, 0.1);
-  background-image: url(../../img/footer.img/footer-mobile.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-@media screen and (min-resolution: 192dpi) and (min-width: 375px),
-  screen and (min-resolution: 2dppx) and (min-width: 375px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
-  .footer {
-    background-image: url(../../img/footer.img/footer-mobile@2.png);
-    background-size: 375px;
-  }
-}
+/* TABLET */
+
 @media screen and (min-width: 768px) {
   .footer-title {
     font-size: 54px;
@@ -93,10 +100,11 @@
   }
 
   .footer {
+    padding-top: 50px;
     padding-bottom: 40px;
     background-image: url(../../img/footer.img/footer-tablet.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom right;
     background-size: 174px;
   }
 }
@@ -107,6 +115,9 @@
     background-image: url(../../img/footer.img/footer-tablet@2.png);
   }
 }
+
+/* DESKTOP-1280 */
+
 @media screen and (min-width: 1280px) {
   .footer-title {
     width: 754px;
@@ -124,6 +135,7 @@
   }
 
   .footer {
+    padding-top: 75px;
     background-image: url(../../img/footer.img/footer-desctop-1280.png);
     background-size: 336px;
   }
@@ -136,6 +148,8 @@
     background-image: url(../../img/footer.img/footer-desctop-1280@2.png);
   }
 }
+
+/* DESKTOP-1440 */
 
 @media screen and (min-width: 1440px) {
   .footer {

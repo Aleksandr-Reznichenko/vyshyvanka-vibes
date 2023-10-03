@@ -61,7 +61,7 @@
     flex-direction: row-reverse;
     padding-left: 64px;
     gap: 50px;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-image: url('../../img/order/desctop-1280/order-ornament-bg-desctop.png');
     background-position: bottom 75px left;
     background-size: 22.5% 72%;
@@ -126,7 +126,7 @@
     max-width: 100%;
     font-size: 44px;
     line-height: 1.318; /* 131.818% */
-    letter-spacing: -0.0825em;
+    /* letter-spacing: -0.0825em; */
   }
 }
 

@@ -21,7 +21,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     background-image: url(../../img/collection/elements-tablet.png);
     background-repeat: no-repeat;
     background-position: left;
-    background-position-y: 185px;
+    background-position-y: 245px;
+  }
+  .collection-item {
+    width: calc((100% - 20px) / 2);
   }
 }
 
@@ -32,7 +35,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     background-image: url(../../img/collection/elements-tablet.png);
     background-repeat: no-repeat;
     background-position: left;
-    background-position-y: 220px;
+    background-position-y: 250px;
   }
 }
 
@@ -41,7 +44,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     background-image: url(../../img/collection/elements-1280.png);
     background-repeat: no-repeat;
     background-position: left;
-    background-position-y: 200px;
+    background-position-y: 280px;
   }
 }
 
@@ -53,7 +56,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
     background-image: url(../../img/collection/elements-1280.png);
     background-repeat: no-repeat;
     background-position: left;
-    background-position-y: 200px;
+    background-position-y: 282px;
   }
 }
 
@@ -62,7 +65,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
     background-image: url(../../img/collection/elements-1440.png);
     background-repeat: no-repeat;
     background-position: left;
-    background-position-y: 285px;
+    background-position-y: 284px;
   }
 }
 
@@ -73,7 +76,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1440px)  {
     background-image: url(../../img/collection/elements-1440.png);
     background-repeat: no-repeat;
     background-position: left;
-    background-position-y: 289px;
+    background-position-y: 286px;
   }
 }
 
@@ -93,13 +96,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1440px)  {
   list-style-type: none;
   display: flex;
   gap: 18px;
-  margin: 0 auto;
-  max-width: 335px;
+  margin: 0 auto;  
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 18px;
   margin: 0 auto;
-  max-width: 100%;
   justify-content: space-between;
 }
 
@@ -140,8 +141,14 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 1440px)  {
 @media screen and (min-width: 768px) {
   .collection-text {
    font-size: 18px;
-  }
+  }  
 }
+@media screen and (min-width: 1280px) {
+  .collection-item {
+      width: calc((100% - 40px) / 3);
+    }
+}
+
 
 @media screen and (max-width: 1440px) {
   .collection-text {

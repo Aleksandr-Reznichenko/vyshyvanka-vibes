@@ -33,6 +33,8 @@
   padding: 20px;
   width: 274px;
   height: 100%;
+  overflow: auto;
+
   background-color: var(--accent-color);
   background-image: url(../../img/mobile-menu/mobile/mob-menu-elem.png);
   background-repeat: no-repeat;

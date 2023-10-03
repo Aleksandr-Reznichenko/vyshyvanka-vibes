@@ -251,8 +251,6 @@
 }
 .form-btn-arrow {
   fill: var(--accent-color);
-  width: 26px;
-  height: 10px;
   transform: rotate(-30deg);
 }
 .order-img-wrapper {

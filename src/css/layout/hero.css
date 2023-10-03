@@ -39,7 +39,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  transition: border-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-link:hover,
@@ -49,6 +49,13 @@
 
 .hero-icon {
   transform: rotate(-30deg);
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-link:hover .hero-icon,
+.hero-link:focus .hero-icon,
+.hero-icon:focus {
+  transform: rotate(0);
 }
 
 .hero-thumb {
@@ -65,6 +72,8 @@
   }
   .hero-title {
     width: 549px;
+    margin-bottom: 40px;
+
     font-size: 54px;
     line-height: 64px;
     letter-spacing: -1.62px;

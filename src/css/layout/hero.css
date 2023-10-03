@@ -1,199 +1,154 @@
 .hero {
-    padding-top: 60px;
-    padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .hero-title {
-    color: var(--prymary-color);
-    font-family: 'Manrope', sans-serif;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 1.23;
-    letter-spacing: -0.03em;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+
+  color: var(--prymary-color);
+  font-family: var(--prymary-font);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 54px;
+  letter-spacing: -1.32px;
 }
 
-.hero-title .hero-accent {
-    color: var(--accent-color);
+.title-accent {
+  color: var(--accent-color);
 }
 
-.hero-button {
-    background-color: var(--bg-color);
-    color: var(--prymary-color);
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.37;
-    letter-spacing: 0.04em;
-    min-width: 155px;
-    height: 49px;
-    /* gap: 10px; */
-    border: 1px solid var(--prymary-color);
-    border-radius: 15px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 36px;
-    padding-right: 36px;
-    margin-right: 110px;
-    margin-left: 70px;
-    margin-bottom: 40px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.hero-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 49px;
+  padding: 14px 36px;
+  margin-bottom: 40px;
+  margin-left: 70px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+
+  fill: var(--accent-color);
+  color: var(--prymary-color);
+  font-family: var(--prymary-font);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: border-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
-    border: 1px solid var(--accent-color);
+.hero-link:hover,
+.hero-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
-.hero-arrow-icon {
-    fill: var(--accent-color);
+.hero-icon {
+  transform: rotate(-30deg);
 }
 
-.hero-img {
-    border-radius: 4px;
+.hero-thumb {
+  display: none;
 }
-
-.hero-img-group {
-    display: none;
-}
-
-.header-star-container {
-    display: none;
-    position: absolute;
-    top: 152px;
-    right: 32px;
-    width: 115px;
-    height: 111px;
-}
-
-.header-icon-star {
-    fill: var(--accent-color);
-    margin-bottom: 16px;
-    display: block;
-    margin-left: auto;
-        margin-right: auto;
-}
-
-.header-icon-text {
-    font-family: var(--prymary-font);
-    color: rgba(252, 249, 249, 0.4);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.37;
-    letter-spacing: -0.04em;
-    text-align: center;
-}
-
-/* ------Tablet-------------- */
-
 @media screen and (min-width: 768px) {
-    .hero {
-        padding-top: 106px;
-        padding-bottom: 50px;
-    }
-    
-    .hero-title {
-        font-size: 54px;
-        line-height: 1.19;
-        width: 549px;
-        height: 192px;
-        margin-bottom: 40px;
-    }
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .hero-container {
+    display: flex;
+    gap: 40px;
+  }
+  .hero-title {
+    width: 549px;
+    font-size: 54px;
+    line-height: 64px;
+    letter-spacing: -1.62px;
+  }
+  .hero-link {
+    padding: 14px 39px;
+    margin-left: 141px;
+  }
+  .hero-thumb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero-star {
+    position: relative;
+    top: -30px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    fill: var(--accent-color);
+  }
 
-    .hero-button {
-        min-width: 168px;
-        height: 50px;
-        font-size: 14px;
-        padding-left: 39px;
-        padding-right: 39px;
-        margin-right: 395px;
-        margin-left: 141px;
-    }
+  .hero-star > svg {
+    animation: star-rotate 30s linear infinite;
+  }
+  .hero-icon-text {
+    color: var(--secondary-color);
+    font-family: var(--prymary-font);
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    text-align: center;
+  }
 
-    .header-star-container {
-        display: block;
-    }
-
-    .hero-img-group {
-        display: block;
-        position: absolute;
-        top: 975px;
-        right: 32px;
-        width: 139px;
-        height: 197px;
-    }
-
-    /* .hero-container-position {
-        display: flex;
-        align-items: flex-end;
-        gap: 143px;
-    } */
-
-    /* .hero-map-group {
-        position: relative;
-        bottom: -110px;
-        right: -9px;
-    } */
+  .hero-img {
+    position: relative;
+    bottom: -85px;
+  }
 }
-
-/* ------Desktop 1280--------------- */
 
 @media screen and (min-width: 1280px) {
-    .hero {
-        padding-top: 100px;
-        padding-bottom: 75px;
-    }
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 75px;
+  }
+  .hero-container {
+    gap: 0;
+  }
+  .hero-box {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    align-items: center;
+  }
+  .hero-title {
+    width: 518px;
+  }
 
-    .hero-title {
-        width: 518px;
-        height: 192px;
-        margin-top: 94px;
-    }
-
-    .header-star-container {
-        top: 186px;
-        right: 100px;
-    }
-
-    .hero-container {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 40px;
-    }
-
-    /* .hero-container-position {
-        
-    } */
-
-    /* .hero-map-group {
-        position: relative;
-        bottom: -75px;
-        right: -4px;
-        } */
-
-    .hero-img-group {
-        top: 619px;
-        right: 100px;
-    }
-
-
-
+  .hero-picture {
+    margin-left: 390px;
+  }
+  .hero-star {
+    top: 0;
+  }
 }
 
-
-/* ------Desktop 1440----------------- */
-
 @media screen and (min-width: 1440px) {
-    .header-star-container {
-            top: 236px;
-            right: 100px;
-        }
+  .hero-container {
+    gap: 61px;
+  }
+  .hero-title {
+    width: 608px;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: -1.92px;
+  }
+}
 
-    .hero-title {
-        margin-top: 66px;
-    }
-
-    .hero-img-group {
-        top: 617px;
-        right: 100px;
-    }
+@keyframes star-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
 }

@@ -276,3 +276,25 @@
 }
 
 /* end of section order */
+/* scroll up */
+.scroll-up {
+  display: none; /* Hidden by default */
+  width: 26px;
+  height: 26px;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  background-color: transparent; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 50%; /* Rounded corners */
+  fill: var(--prymary-color);
+  stroke: #00000057;
+  transition: fill 400ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-up:hover {
+  fill: var(--accent-color);
+  stroke: #00000057;
+}

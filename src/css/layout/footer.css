@@ -1,0 +1,191 @@
+/* PAGE FOOTER */
+
+.footer {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 292px;
+  background-image: url(../../img/footer.img/footer-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 375px),
+  screen and (min-resolution: 2dppx) and (min-width: 375px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
+  .footer {
+    background-image: url(../../img/footer.img/footer-mobile@2.png);
+    background-size: 375px;
+  }
+}
+
+.footer-container {
+  padding-top: 40px;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-nav {
+  display: inline-block;
+}
+
+.footer-link {
+  color: var(--prymary-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  text-transform: uppercase;
+
+  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-link:focus,
+.footer-link:active {
+  color: var(--accent-color);
+}
+
+.footer-title {
+  color: var(--prymary-color);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.23;
+  letter-spacing: -0.03em;
+}
+
+.footer-title-text {
+  color: var(--accent-color);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.23;
+  letter-spacing: -0.03em;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+  max-width: 375px;
+}
+.footer-item {
+  width: calc((100% - 40px) / 2);
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .footer-title {
+    font-size: 54px;
+    line-height: 1.19;
+    /* 118.519% */
+    width: 521px;
+  }
+
+  .footer-title-text {
+    font-size: 54px;
+    line-height: 1.19;
+    /* 118.519% */
+  }
+
+  .footer-list {
+    flex-wrap: nowrap;
+    max-width: 768px;
+    margin-bottom: 80px;
+  }
+
+  .footer-link:focus,
+  .footer-link:hover {
+    color: var(--accent-color);
+  }
+  .footer-item {
+    width: auto;
+  }
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-image: url(../../img/footer.img/footer-tablet.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 174px;
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .footer {
+    background-image: url(../../img/footer.img/footer-tablet@2.png);
+  }
+}
+
+/* DESKTOP-1280 */
+
+@media screen and (min-width: 1280px) {
+  .footer-link {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer-link::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    margin-top: 8px;
+    transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .footer-link:hover::after,
+  .footer-link:focus::after {
+    background-color: var(--accent-color);
+  }
+
+  .footer-title {
+    width: 754px;
+    font-size: 64px;
+    line-height: 1.16;
+  }
+
+  .footer-title-text {
+    font-size: 64px;
+    line-height: 1.16;
+  }
+
+  .footer-list {
+    margin-bottom: 117px;
+  }
+
+  .footer {
+    padding-top: 75px;
+    background-image: url(../../img/footer.img/footer-desctop-1280.png);
+    background-size: 336px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .footer {
+    background-image: url(../../img/footer.img/footer-desctop-1280@2.png);
+  }
+}
+
+/* DESKTOP-1440 */
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        background-image: url(../../img/footer.img/footer-desctop-1440.png);
+        background-size: 496px;
+        max-width: 1440px;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width:1440px),
+screen and (min-resolution: 2dppx) and (min-width:1440px),
+screen and (min-device-pixel-ratio: 2) and (min-width:1440px) {
+    .footer {
+        background-image: url(../../img/footer.img/footer-desctop-1440@2.png);
+        
+    }
+}

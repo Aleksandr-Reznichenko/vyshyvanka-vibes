@@ -1,0 +1,191 @@
+/* About us section */
+.container-about-us {
+  margin: 0 auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+}
+
+.about {
+  background-image: url(/img/about/mobile/about-us-background-mobile.png);
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-position: bottom right -1px;
+  background-color: var(--bg-color);
+  max-width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 62px;
+}
+.about-us-list {
+  margin-bottom: 25px;
+}
+.about-us-title {
+  color: var(--prymary-color);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: -0.96px;
+  max-width: 375px;
+}
+
+.about-us-text {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+.about-us-item {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.about-us-icon {
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 375px) {
+  .about-us-item {
+    width: 335px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-item {
+    width: 704px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .about-us-icon {
+    border-radius: 4px;
+  }
+
+  .about-us-list {
+    margin-bottom: 40px;
+  }
+  .about {
+    background-image: url(/img/about/desktop-1280/about-us-background-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom right -15px;
+    background-color: var(--bg-color);
+    max-width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .about-us-title {
+    color: var(--white, #fcf9f9);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.45455;
+    letter-spacing: -1.32px;
+    padding-bottom: 20px;
+  }
+  .about-us-text {
+    color: rgba(252, 249, 249, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-about-us {
+    display: inline-flex;
+    flex-direction: inherit;
+    align-items: center;
+    width: 1080px;
+    height: 545px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .text-container {
+    display: block;
+    margin-right: 50px;
+  }
+
+  .about-us-title {
+    color: var(--white, #fcf9f9);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 64px;
+    letter-spacing: -1.32px;
+    margin: 0;
+  }
+
+  .about-us-list {
+    max-width: 436px;
+  }
+  .about-us-item {
+    width: 436px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .about-us-text {
+    color: rgba(252, 249, 249, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    width: 436px;
+    margin: 0;
+  }
+  .about {
+    background-image: url(/img/about/desktop-1280/about-us-background-desktop.png);
+    background-position: bottom right 1px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 75px 100px 75px 100px;
+    height: 695px;
+  }
+  .about-us-thumb {
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    .container-about-us {
+      display: inline-flex;
+      flex-direction: inherit;
+      align-items: center;
+      width: 1240px;
+      height: 545px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .about-us-list {
+      width: 481px;
+    }
+    .about-us-item {
+      width: 481px;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+    .about-us-text {
+      color: rgba(252, 249, 249, 0.4);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.64px;
+      width: 481px;
+      margin: 0;
+    }
+    .about {
+      background-image: url(/img/about/desktop-1440/about-us-background-desktophq.png);
+      background-position: bottom right 1px;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 75px 100px 75px 100px;
+      height: 695px;
+    }
+    .text-container {
+      display: block;
+      margin-right: 50px;
+      width: 481px;
+    }
+  }
+}

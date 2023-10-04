@@ -6,8 +6,7 @@
 .reviews-title {
   margin-bottom: 40px;
 
-  color: #fcf9f9;
-  font-family: Manrope;
+  color: var(--prymary-color);
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -25,7 +24,7 @@
   margin-top: 24px;
   padding: 0px 22px 18px 22px;
   border-radius: 4px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
+  border: 1px solid var(--border-color);
 }
 .hidden {
   display: none;
@@ -52,8 +51,7 @@
 .reviews-subtitle {
   margin-bottom: 8px;
 
-  color: #fcf9f9;
-  font-family: Manrope;
+  color: var(--prymary-color);
   font-weight: 600;
   font-size: 20px;
   text-align: center;
@@ -62,8 +60,7 @@
 }
 
 .reviews-text {
-  color: rgba(252, 249, 249, 0.4);
-  font-family: Manrope;
+  color: var(--secondary-color);
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -88,6 +85,7 @@
   }
   .reviews-text {
     width: 300px;
+    font-size: 16px;
   }
 }
 

@@ -182,7 +182,7 @@
   line-height: normal;
   letter-spacing: -0.02em;
   outline: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form-comment {
   width: 100%;
@@ -199,7 +199,7 @@
   line-height: normal;
   letter-spacing: -0.02em;
   outline: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form-input::placeholder,
 .order-form-comment::placeholder {
@@ -232,7 +232,7 @@
   line-height: normal;
   letter-spacing: -0.035em;
   text-transform: uppercase;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-btn:hover,
 .form-btn:focus {

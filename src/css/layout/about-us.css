@@ -204,23 +204,22 @@
     margin: 0;
   }
   .about {
-      background-image: url(/img/about/desktop-1440/about-us-background-desktophq.png);
-      background-position: bottom right;
-      max-width: 1440px;
-      background-size: 544px 483px;
-      margin: 0 auto;
-      padding: 75px 100px 75px 100px;
-      height: 695px;}
->>>>>>> main
-    
-
-@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-  screen and (min-resolution: 2dppx) and (min-width: 1440px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-  .about {
-    background-image: url(/img/about/desktop-1440/about-us-background-desktophq@2x.png);
+    background-image: url(/img/about/desktop-1440/about-us-background-desktophq.png);
+    background-position: bottom right;
+    max-width: 1440px;
+    background-size: 544px 483px;
+    margin: 0 auto;
+    padding: 75px 100px 75px 100px;
+    height: 695px;
   }
 
+  @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+    screen and (min-resolution: 2dppx) and (min-width: 1440px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+    .about {
+      background-image: url(/img/about/desktop-1440/about-us-background-desktophq@2x.png);
+    }
+  }
   .text-container {
     display: block;
     margin-right: 50px;

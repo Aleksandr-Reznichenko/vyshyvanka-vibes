@@ -4,60 +4,75 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  min-width: 320px;
 }
-
 .about {
   background-image: url(/img/about/mobile/about-us-background-mobile.png);
   background-repeat: no-repeat;
-  background-position: absolute;
-  background-position: bottom right -1px;
+  background-size: 229px 408px;
+  background-position: bottom right;
   background-color: var(--bg-color);
-  max-width: fit-content;
   margin: 0 auto;
   padding-bottom: 62px;
+  max-width: 100%;
 }
-.about-us-list {
-  margin-bottom: 25px;
-}
-.about-us-title {
-  color: var(--prymary-color);
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.375;
-  letter-spacing: -0.96px;
-  max-width: 375px;
-}
-
-.about-us-text {
-  color: var(--secondary-color);
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.56px;
-}
-.about-us-item {
-  margin: 0 auto;
-  padding-top: 20px;
-}
-
-.about-us-icon {
-  border-radius: 4px;
-}
-
 @media screen and (min-width: 375px) {
+  .about {
+    background-image: url(/img/about/mobile/about-us-background-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 229px 408px;
+    background-position: bottom right;
+    background-color: var(--bg-color);
+    margin: 0 auto;
+    padding-bottom: 62px;
+    max-width: 375px;
+  }
+  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .about {
+      background-image: url(/img/about/mobile/about-us-background-mobile@2x.png);
+    }
+  }
+
+  .about-us-list {
+    margin-bottom: 25px;
+  }
+  .about-us-title {
+    color: var(--prymary-color);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.375;
+    letter-spacing: -0.96px;
+    max-width: 375px;
+  }
+
+  .about-us-text {
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.56px;
+  }
   .about-us-item {
-    width: 335px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .about-us-icon {
+    border-radius: 4px;
+  }
+
+  .about-us-item {
+    max-width: 335px;
     margin: 0 auto;
     padding-top: 20px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .about-us-item {
-    width: 704px;
+    max-width: 704px;
     margin: 0 auto;
     padding-top: 20px;
   }
@@ -69,13 +84,22 @@
     margin-bottom: 40px;
   }
   .about {
-    background-image: url(/img/about/desktop-1280/about-us-background-desktop.png);
+    background-image: url(/img/about/tablet/about-us-background-tablet.png);
     background-repeat: no-repeat;
-    background-position: bottom right -15px;
+    background-size: 369px 484px;
+    background-position: bottom right;
     background-color: var(--bg-color);
-    max-width: fit-content;
     margin: 0 auto;
     padding-bottom: 50px;
+    max-width: 768px;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .about {
+      background-image: url(/img/about/tablet/about-us-background-tablet@2x.png);
+    }
   }
   .about-us-title {
     color: var(--white, #fcf9f9);
@@ -99,10 +123,7 @@
     display: inline-flex;
     flex-direction: inherit;
     align-items: center;
-    width: 1080px;
-    height: 545px;
     margin: 0 auto;
-    padding: 0;
   }
   .text-container {
     display: block;
@@ -115,14 +136,13 @@
     font-weight: 500;
     line-height: 64px;
     letter-spacing: -1.32px;
-    margin: 0;
   }
 
   .about-us-list {
     max-width: 436px;
   }
   .about-us-item {
-    width: 436px;
+    max-width: 436px;
     margin: 0 auto;
     padding-top: 20px;
   }
@@ -137,55 +157,72 @@
   }
   .about {
     background-image: url(/img/about/desktop-1280/about-us-background-desktop.png);
-    background-position: bottom right 1px;
+    background-position: bottom right;
     max-width: 1280px;
+    background-size: 384px 483px;
+    margin: 0 auto;
+    padding-bottom: 75px;
+  }
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .about {
+    background-image: url(/img/about/desktop-1280/about-us-background-desktop@2x.png);
+  }
+}
+.about-us-thumb {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+}
+@media screen and (min-width: 1440px) {
+  .container-about-us {
+    display: inline-flex;
+    flex-direction: inherit;
+    align-items: center;
+    width: 1240px;
+    height: 545px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .about-us-list {
+    width: 481px;
+  }
+  .about-us-item {
+    max-width: 481px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .about-us-text {
+    color: rgba(252, 249, 249, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    width: 481px;
+    margin: 0;
+  }
+  .about {
+    background-image: url(/img/about/desktop-1440/about-us-background-desktophq.png);
+    background-position: bottom right;
+    max-width: 1440px;
+    background-size: 544px 483px;
     margin: 0 auto;
     padding: 75px 100px 75px 100px;
     height: 695px;
   }
-  .about-us-thumb {
-    padding-bottom: 0;
-  }
 
-  @media screen and (min-width: 1440px) {
-    .container-about-us {
-      display: inline-flex;
-      flex-direction: inherit;
-      align-items: center;
-      width: 1240px;
-      height: 545px;
-      margin: 0 auto;
-      padding: 0;
-    }
-    .about-us-list {
-      width: 481px;
-    }
-    .about-us-item {
-      width: 481px;
-      margin: 0 auto;
-      padding-top: 20px;
-    }
-    .about-us-text {
-      color: rgba(252, 249, 249, 0.4);
-      font-size: 16px;
-      font-weight: 400;
-      line-height: normal;
-      letter-spacing: -0.64px;
-      width: 481px;
-      margin: 0;
-    }
+  @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+    screen and (min-resolution: 2dppx) and (min-width: 1440px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     .about {
-      background-image: url(/img/about/desktop-1440/about-us-background-desktophq.png);
-      background-position: bottom right 1px;
-      max-width: 1440px;
-      margin: 0 auto;
-      padding: 75px 100px 75px 100px;
-      height: 695px;
+      background-image: url(/img/about/desktop-1440/about-us-background-desktophq@2x.png);
     }
-    .text-container {
-      display: block;
-      margin-right: 50px;
-      width: 481px;
-    }
+  }
+  .text-container {
+    display: block;
+    margin-right: 50px;
+    width: 481px;
   }
 }

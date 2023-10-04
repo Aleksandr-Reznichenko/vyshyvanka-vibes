@@ -1,8 +1,9 @@
 .collection-box {
   background-image: url(../../img/collection/elements.png);
   background-repeat: no-repeat;
-  background-position: left;
-  background-position-y: 325px;
+  background-position: left top 12%;
+  max-width: fit-content;
+  margin: 0 auto;
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -10,18 +11,13 @@
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .collection-box {
     background-image: url(../../img/collection/elements.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position-y: 320px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .collection-box {
     background-image: url(../../img/collection/elements-tablet.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position-y: 245px;
+    background-position: left top 16%;
   }
   .collection-item {
     width: calc((100% - 20px) / 2);
@@ -33,18 +29,13 @@
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .collection-box {
     background-image: url(../../img/collection/elements-tablet.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position-y: 250px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .collection-box {
     background-image: url(../../img/collection/elements-1280.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position-y: 280px;
+    background-position: left top 28%;
   }
 }
 
@@ -53,18 +44,13 @@
   screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
   .collection-box {
     background-image: url(../../img/collection/elements-1280.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position-y: 282px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .collection-box {
     background-image: url(../../img/collection/elements-1440.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position-y: 284px;
+    background-position: left top 30.5%;
   }
 }
 
@@ -73,9 +59,6 @@
   screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .collection-box {
     background-image: url(../../img/collection/elements-1440.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position-y: 286px;
   }
 }
 
@@ -115,6 +98,7 @@
 }
 
 .collection-text {
+  max-width: 100%;
   color: #fcf9f9;
   white-space: nowrap;
   text-overflow: ellipsis;

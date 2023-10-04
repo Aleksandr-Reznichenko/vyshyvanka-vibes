@@ -134,17 +134,22 @@
 
   .collection-text {
     font-size: 18px;
+    width: 342px;
   }
 }
 @media screen and (min-width: 1280px) {
   .collection-item {
     width: calc((100% - 40px) / 3);
   }
+  .collection-text {
+    width: 345px;
+  }
 }
 
 @media screen and (max-width: 1440px) {
   .collection-text {
     overflow: hidden;
+    width: 100%;
   }
 }
 

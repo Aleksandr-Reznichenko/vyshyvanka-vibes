@@ -174,16 +174,18 @@
 /* DESKTOP-1440 */
 
 @media screen and (min-width: 1440px) {
-  .footer {
-    background-image: url(../../img/footer.img/footer-desctop-1440.png);
-    background-size: 496px;
-  }
+    .footer {
+        background-image: url(../../img/footer.img/footer-desctop-1440.png);
+        background-size: 496px;
+        max-width: 1440px;
+    }
 }
 
-@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-  screen and (min-resolution: 2dppx) and (min-width: 1440px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-  .footer {
-    background-image: url(../../img/footer.img/footer-desctop-1440@2.png);
-  }
+@media screen and (min-resolution: 192dpi) and (min-width:1440px),
+screen and (min-resolution: 2dppx) and (min-width:1440px),
+screen and (min-device-pixel-ratio: 2) and (min-width:1440px) {
+    .footer {
+        background-image: url(../../img/footer.img/footer-desctop-1440@2.png);
+        
+    }
 }

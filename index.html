@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,8 +20,8 @@
     />
 
     
-    <script type="module" crossorigin src="/vyshyvanka-vibes/assets/index-79fd01e5.js"></script>
-    <link rel="stylesheet" href="/vyshyvanka-vibes/assets/index-582d90e0.css">
+    <script type="module" crossorigin src="/vyshyvanka-vibes/assets/index-c07b292d.js"></script>
+    <link rel="stylesheet" href="/vyshyvanka-vibes/assets/index-4e8f1edd.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -153,6 +153,8 @@
         sizes="(min-width: 1158px) 392px, (min-width: 768px) 413px, (max-width: 767px) 335px"
         src="../img/hero/mobile/girl-mobile.jpg"
         alt="a girl in a vyshyvanka "
+        data-aos="fade-up"
+        data-aos-duration="3000"
       />
     </div>
     <div class="hero-thumb">
@@ -391,7 +393,7 @@
         </button>
       </form>
     </div>
-    <div class="order-img-wrapper">
+    <div class="order-img-wrapper" data-aos="fade-up" data-aos-duration="3000">
       <img
         class="order-img"
         srcset="/vyshyvanka-vibes/assets/order-content-img-desctop1440-7239e369.jpg 524w, /vyshyvanka-vibes/assets/order-content-img-desctop1440@2x-2acdd4ac.jpg 1048w, /vyshyvanka-vibes/assets/order-content-img-tablet-d184010a.jpg 638w, /vyshyvanka-vibes/assets/order-content-img-tablet@2x-02a1d723.jpg 1276w"
@@ -415,7 +417,7 @@
   <div class="reviews-container container">
     <h2 class="reviews-title">Testimonials</h2>
     <ul class="reviews-list">
-      <li class="reviews-item">
+      <li class="reviews-item" data-aos="fade-right" data-aos-duration="2000">
         <div class="reviews-box">
           <img
             class="reviews-icon"
@@ -434,7 +436,11 @@
           and received impeccable service and refinement in every detail.
         </p>
       </li>
-      <li class="reviews-item hidden">
+      <li
+        class="reviews-item hidden"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div class="reviews-box">
           <img
             class="reviews-icon"
@@ -453,7 +459,11 @@
           embroidery shop where I always find something special and unique.
         </p>
       </li>
-      <li class="reviews-item hidden-natali">
+      <li
+        class="reviews-item hidden-natali"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <div class="reviews-box">
           <img
             class="reviews-icon"
@@ -578,5 +588,9 @@
     
     
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

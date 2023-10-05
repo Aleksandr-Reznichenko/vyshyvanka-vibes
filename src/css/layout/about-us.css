@@ -5,6 +5,24 @@
   flex-direction: column;
   align-items: center;
 }
+.about-us-title {
+  color: var(--prymary-color);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: -0.96px;
+  max-width: 375px;
+}
+
+.about-us-text {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
 .about {
   background-image: url(/img/about/mobile/about-us-background-mobile.png);
   background-repeat: no-repeat;
@@ -25,13 +43,6 @@
     margin: 0 auto;
     padding-bottom: 62px;
     max-width: 375px;
-  }
-  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px),
-    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-    .about {
-      background-image: url(/img/about/mobile/about-us-background-mobile@2x.png);
-    }
   }
 
   .about-us-list {
@@ -69,6 +80,13 @@
     margin: 0 auto;
     padding-top: 20px;
   }
+  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .about {
+      background-image: url(/img/about/mobile/about-us-background-mobile@2x.png);
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .about-us-item {
@@ -94,13 +112,6 @@
     max-width: 768px;
   }
 
-  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px),
-    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-    .about {
-      background-image: url(/img/about/tablet/about-us-background-tablet@2x.png);
-    }
-  }
   .about-us-title {
     color: var(--white, #fcf9f9);
     font-size: 44px;
@@ -117,7 +128,13 @@
     letter-spacing: -0.64px;
   }
 }
-
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .about {
+      background-image: url(/img/about/tablet/about-us-background-tablet@2x.png);
+    }
+  }
 @media screen and (min-width: 1280px) {
   .container-about-us {
     display: inline-flex;
@@ -164,16 +181,16 @@
     padding-bottom: 75px;
   }
 
-@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
-  screen and (min-resolution: 2dppx) and (min-width: 1280px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
-  .about {
-    background-image: url(/img/about/desktop-1280/about-us-background-desktop@2x.png);
+  .about-us-thumb {
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
-.about-us-thumb {
-  padding-bottom: 0;
-  padding-top: 0;
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+.about {
+  background-image: url(/img/about/desktop-1280/about-us-background-desktop@2x.png);
 }
 }
 @media screen and (min-width: 1440px) {
@@ -213,16 +230,17 @@
     height: 695px;
   }
 
-  @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-    screen and (min-resolution: 2dppx) and (min-width: 1440px),
-    screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-    .about {
-      background-image: url(/img/about/desktop-1440/about-us-background-desktophq@2x.png);
-    }
-  }
+  
   .text-container {
     display: block;
     margin-right: 50px;
     width: 481px;
   }
 }
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+    screen and (min-resolution: 2dppx) and (min-width: 1440px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+    .about {
+      background-image: url(/img/about/desktop-1440/about-us-background-desktophq@2x.png);
+    }
+  }

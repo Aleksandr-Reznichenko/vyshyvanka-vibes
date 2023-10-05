@@ -134,16 +134,22 @@
     display: block;
     position: absolute;
     content: '';
-    width: 100%;
+    width: 0;
+    bottom: 0;
+    left: 50%;
     height: 2px;
     border-radius: 2px;
     margin-top: 8px;
-    transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1),
+      width 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(-50%);
   }
 
   .menu-link:hover::after,
   .menu-link:focus::after {
     background-color: var(--accent-color);
+    width: 100%;
+    transition-delay: 200ms;
   }
 
   .contact-list-link {

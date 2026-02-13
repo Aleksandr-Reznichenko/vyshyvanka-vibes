@@ -1,4 +1,4 @@
-# Vyshyvanka Vibes — Ukrainian Embroidery Website
+# Vyshyvanka Vibes - Ukrainian Embroidery Website
 
 Modern, responsive landing page for a Ukrainian embroidery brand. A collection
 of traditional clothing that combines folk symbolism and modern style.

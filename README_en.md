@@ -1,4 +1,4 @@
-# Vyshyvanka Vibes — Ukrainian Embroidery Website
+# Vyshyvanka Vibes - Ukrainian Embroidery Website
 
 **English** | **[🇺🇦 Українською](README_uk.md)**
 
